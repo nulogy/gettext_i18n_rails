@@ -18,12 +18,12 @@ module GettextI18nRails
           end
         end
         f.puts "#DO NOT MODIFY! AUTOMATICALLY GENERATED FILE!"
-        f.puts <<~RAILS_7
-          # RAILS_7 (2023-04-06): Workaround an issue with Rails 7.
+        f.puts <<~RAILS_7_WORKAROUND
+          # Workaround an issue with Rails 7.
           # Change in rails: https://github.com/rails/rails/pull/41872
           # Issue in gettext_i18n_rails: https://github.com/grosser/gettext_i18n_rails/issues/160.
           {}
-        RAILS_7
+        RAILS_7_WORKAROUND
       end
     rescue
       puts "[Error] Attribute extraction failed. Removing incomplete file (#{file})"
